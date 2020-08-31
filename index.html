@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tic Tac Toe</title>
+  </head>
+  <link rel="stylesheet" href="index.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+  <body>
+   <div class="head"> <h1> TIC TAC TOE</h1></div>
+
+  <div id="go" class="divide">
+  <div class="gameandname">
+    <div class="name">
+    <div id="my1" class="namesec">
+    <div class="player"> Player: 1</div>
+    <input type="text" id="p1" name="p1" placeholder="Enter name"/>
+    <div id="name1" class="nam"></div>
+    <div class="coverofstat" id="stat1">
+    <div class="disp">
+    <div>Win: </div>
+    <div id="winfirst" class="chance"></div>
+    </div>
+    <div class="disp">
+      <div>Lose: </div>
+      <div id="losefirst" class="chance"></div>
+      </div>
+      <div class="disp">
+        <div>Draw: </div>
+        <div id="drawfirst" class="chance"></div>
+        </div>
+        <div id="symbol1" class="symbol">X</div>
+
+    </div>
+    <!-- coverofstat ends here -->
+    </div>
+    <div id = "game">
+      <div class="col">
+      <div class="row" >
+      <div class="cell" id="00" onclick="handleclick(this)" ></div>
+      <div class="cell" id="01" onclick="handleclick(this)" ></div>
+      <div class="cell" id="02" onclick="handleclick(this)" ></div>
+      </div>
+      <div class="row" >
+      <div class="cell" id="10" onclick="handleclick(this)" ></div>
+      <div class="cell" id="11" onclick="handleclick(this)" ></div>
+      <div class="cell" id="12" onclick="handleclick(this)" ></div>
+      </div>
+      <div class="row" >
+      <div class="cell" id="20" onclick="handleclick(this)" ></div>
+      <div class="cell" id="21" onclick="handleclick(this)" ></div>
+      <div class="cell" id="22" onclick="handleclick(this)" ></div>
+      </div>
+      </div>
+      </div>
+  <div id="my2" class="namesec">
+    <div class="player"> Player: 2</div>
+  <input type="text" id="p2" name="p2" placeholder="Enter name"/>
+  <div id="name2" class="nam"></div>
+  <div class="coverofstat" id="stat2">
+  <div class="disp">
+    <div>Win: </div>
+    <div id="winsecond" class="chance"></div>
+    </div>
+    <div class="disp">
+      <div>Lose: </div>
+      <div id="losesecond" class="chance"></div>
+      </div>
+      <div class="disp">
+        <div>Draw: </div>
+        <div id="drawsecond" class="chance"></div>
+        </div>
+        <div id="symbol2" class="symbol">O</div>
+  </div>
+<!-- coverofstat ends here -->
+
+  </div>
+</div>
+</div>
+  <div> <button id="start" class="starter" onclick="startgame()"> Start Game</button></div>
+  <div> <button id="reset" class="hide2 resetter" onclick="resetgame()"> Reset</button></div>
+
+ 
+</div>
+<!-- MOdal Starts for COngrats -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+   <div id="congo" class="congo"></div>
+    <img src="win.svg" height="80%" width="100%"/>
+  </div>
+</div>
+<!-- MOdal Ends for Congrats-->
+
+
+<!-- MOdal Starts for noname-->
+<div id="mymodalname" class="modalname">
+
+  <!-- Modal content -->
+  <div class="modal-contentname">
+    <span class="closename">&times;</span>
+    <p>Enter Valid Name</p>
+  </div>
+</div>
+ <!-- MOdal Ends for noname-->
+
+ <!-- MOdal Starts for drawn-->
+<div id="draw" class="gamedrawn">
+
+  <!-- Modal content -->
+  <div class="gamedrawn-content">
+    <span class="drawclose">&times;</span>
+    <p>Oops, Game is drawn</p>
+  </div>
+</div>
+ <!-- MOdal Ends for drawn-->
+
+
+  <script src="index.js"></script>
+  <script src="confetti.js"></script>
+  <script src="confettimin.js"></script>
+  <script src="modal.js"></script>
+
+  </body>
+</html>

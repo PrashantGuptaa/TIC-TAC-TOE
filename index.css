@@ -1,0 +1,306 @@
+body {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+  background-image: url(game.jpg);
+}
+.head{
+  background-image: url(headbg.jpg);
+color: lightblue;
+ height: 10%;
+border-radius: 0 0 30% 30%;
+text-shadow: 5px 5px 5px blue;
+}
+h1{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-content: center;
+  font-size: 40px;
+  margin: 0;
+}
+.disp{
+  display: flex;
+  padding: 3px;
+  margin-top: 5px;
+  font-family: monospace;
+  font-size: 17px;
+}
+
+.chance{
+padding-left: 5px;
+}
+.symbol{
+  padding: 10px;
+  font-size: 60px;
+  text-shadow: 3px 3px 5px black;
+}
+.divide{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+align-items: center;
+}
+.gameandname{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+.name {
+  display: flex;
+  flex-direction: row;
+  /* width: 500px; */
+}
+.player{
+border-bottom: 1px solid white;
+padding-bottom: 5px;
+}
+.nam{
+display: flex;
+text-align: left;
+font-family: monospace;
+padding: 3px;
+}
+.namesec {
+  color: white;
+  padding: 10px;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  text-align: center;
+  margin: 10px;
+  margin-top: 30px;
+  border-radius: 5px;
+  height: 250px;
+  width: 180px;
+  background: #360033;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #0b8793, #360033);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #0b8793, #360033); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+box-shadow: 2px 2px 12px 2px blue;
+}
+button {
+  height: 40px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  border-radius: 5px; 
+  box-shadow: 3px 3px 12px 3px black;
+cursor:pointer;
+}
+.starter{
+  width: 420px;
+}
+button:hover{
+  transform: scale(1.05);
+  transition: 0.4s;
+}
+
+input {
+  /* height: 30px; */
+  /* border-radius: 10px; */
+  margin-top: 10px;
+  height: 20px;
+  font-weight: bold;
+}
+.col {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center;
+  align-content: center; */
+  padding: 10px;
+  /* margin-left: 30px; */
+}
+.hide {
+  display: none;
+}
+.hide2{
+  display: none;
+}
+.resetter{
+  width: 350px;
+}
+.row {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 60px;
+  font-weight: bold;
+  height: 100px;
+  width: 100px;
+  border: 2px solid white;
+  border-radius: 5px;
+  box-shadow: 2px 2px 3px 2px white;
+  margin: 5px;
+  cursor: pointer;
+}
+/* Modal CSS starts from here */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  border-radius: 10px;
+  background-color: #ffffff;
+  margin: 10% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 34%; /* Could be more or less, depending on screen size */
+  height: 46%;
+font-size: 20px;
+background: #F1F2B5;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #135058, #F1F2B5);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #135058, #F1F2B5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+p{
+  display: flex;
+  justify-content: center;
+  /* text-align: center; */
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+.congo{
+  display: flex;
+  text-align: center;
+  justify-items: center;
+  justify-content: center;
+  font-size: 25px;
+}
+/* MOdal CSS for name Ends Here */
+
+
+
+.modalname {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-contentname {
+  border-radius: 5px;
+  background-color: #ffffff;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 20%; /* Could be more or less, depending on screen size */
+  height: 10%;
+font-size: 22px;
+background: #BBD2C5;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #292E49, #536976, #BBD2C5);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #292E49, #536976, #BBD2C5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+/* The Close Button */
+.closename {
+  color: black;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+p{
+  display: flex;
+  justify-content: center;
+  /* text-align: center; */
+}
+
+.closename:hover,
+.closename:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+.gamedrawn {
+  display: none; 
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.gamedrawn-content {
+  border-radius: 5px;
+  background-color: #ffffff;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  width: 20%; /* Could be more or less, depending on screen size */
+  height: 10%;
+font-size: 22px;
+background: #BBD2C5;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #292E49, #536976, #BBD2C5);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #292E49, #536976, #BBD2C5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+/* The Close Button */
+.drawclose {
+  color: black;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+
+.drawclose:hover,
+.drawclose:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
